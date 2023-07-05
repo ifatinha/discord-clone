@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+    width : 100%;
+}
+
+.container {
+    margin   : 0 auto;
+    max-width: 1260px;
+    width    : 100%;
+}
+
+.container-main {
+    background-color: var(--background);
+    height          : 100%;
+    overflow        : hidden;
+    position        : relative;
+    width           : 100%;
+}
