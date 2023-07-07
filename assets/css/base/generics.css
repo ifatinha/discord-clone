@@ -23,7 +23,6 @@ body {
 
 .container-main {
     background-color: var(--background);
-    height          : 100%;
     overflow        : hidden;
     position        : relative;
     width           : 100%;
@@ -31,7 +30,21 @@ body {
 
 @media screen and (min-width: 1024px) {
     .container-main {
-        height: 650px;
+        height  : 650px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-main {
+        height  : 800px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-main {
+        min-height: 100%;
     }
 }
 
@@ -40,11 +53,13 @@ a {
 }
 
 .btn-default {
-    align-items: center;
-    display    : flex;
-    font-weight: 500;
-    line-height: 24px;
-    transition : .3s all ease-in-out;
+    align-items    : center;
+    display        : flex;
+    font-weight    : 500;
+    justify-content: center;
+    line-height    : 24px;
+    text-align     : center;
+    transition     : .3s all ease-in-out;
 }
 
 .btn-default:hover {
@@ -53,4 +68,10 @@ a {
 
 .btn-white {
     background-color: var(--white);
+    color           : var(--not-quite-black);
+}
+
+.btn-black {
+    background-color: var(--not-quite-black);
+    color           : var(--white);
 }

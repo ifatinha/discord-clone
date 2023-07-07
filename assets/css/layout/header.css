@@ -1,9 +1,9 @@
 .header-container {
-    align-items     : center;
-    height          : 80px;
-    justify-content : space-between;
-    position        : relative;
-    z-index         : 9998;
+    align-items    : center;
+    height         : 80px;
+    justify-content: space-between;
+    position       : relative;
+    z-index        : 9998;
 }
 
 .logo {
@@ -136,7 +136,5 @@
 
 .btn-login {
     border-radius: 40px;
-    color        : var(--not-quite-black);
-    font-size    : 0.875rem;
     padding      : 7px 16px;
 }

@@ -5,12 +5,27 @@
     width          : 100%;
 }
 
+@media screen and (max-width: 1000px) {
+    .container-principal {
+        align-items    : start;
+        justify-content: left;
+    }
+}
+
 .content-principal {
     margin    : 0 auto;
-    max-width : 780px;
+    width     : 780px;
     text-align: center;
-    width     : 100%;
-    z-index   : 9999;
+    z-index   : 99999;
+}
+
+@media screen and (max-width: 780px) {
+    .content-principal {
+        margin    : 50px 0;
+        padding   : 10px;
+        text-align: left;
+        width     : 550px;
+    }
 }
 
 .content-text {
@@ -20,23 +35,58 @@
 .content-text h1 {
     font-family   : var(--font-headline);
     font-size     : 3.5rem;
-    font-weight   : 700;
     text-transform: uppercase;
     margin        : auto;
-    max-width     : 400px;
-    width         : 100%;
+    width         : 400px;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-text h1 {
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-text h1 {
+        margin: 0;
+        width : 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-text h1 {
+        font-size: 1.5rem;
+        width    : 250px;
+    }
 }
 
 .content-text p {
     font-size  : 1.125rem;
     line-height: 32px;
-    margin     : 20px 0;
+    margin     : 40px 0 24px;
 }
 
 .content-btns {
     align-items    : center;
     gap            : 20px;
+    flex-wrap      : wrap;
     justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+    .content-btns {
+        align-items    : start;
+        justify-content: left;
+    }
+}
+
+.btn-main {
+    border-radius: 28px;
+    font-family  : var(--font-primary);
+    font-size    : 1.25rem;
+    gap          : 10px;
+    line-height  : 24px;
+    padding      : 16px 32px;
 }
 
 .container-bg {
@@ -60,20 +110,32 @@
     }
 
     #bg-02 {
-        left: -290px;
+        left: -250px;
     }
 
     #bg-03 {
-        right: -280px;
+        bottom: 0;
+        right : -250px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     #bg-02 {
-        left: -1400px;
+        display: none;
     }
 
     #bg-03 {
-        right: 0;
+        right: -150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bg-02 {
+        display: block;
+        right  : 40px;
+    }
+
+    #bg-03 {
+        display: none;
     }
 }
