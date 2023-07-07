@@ -17,12 +17,15 @@
 <body>
     <div class="container-main">
         <header>
-            <div class="container container-header">
+            <div class="container header-container flex">
                 <div class="logo">
-                    <img src="assets/images/small_logo_white_RGB.png" alt="Discord Logo">
+                    <a href="#" aria-label="Link com o logo da discord">
+                        <img src="assets/images/small_logo_white_RGB.png" alt="Discord Logo">
+                    </a>
                 </div>
-                <nav class="nav-header">
-                    <ul>
+
+                <nav id="desktop-nav">
+                    <ul class="flex desktop-menu">
                         <li><a href="#">Download</a></li>
                         <li><a href="#">Nitro</a></li>
                         <li><a href="#">Discover</a></li>
@@ -32,8 +35,36 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </nav>
-                <div class="header-login">
-                    <a href="#">Login</a>
+
+                <div class="flex header-rigth">
+                    <div class="header-login">
+                        <a href="#" class="btn-default btn-white btn-login">Login</a>
+                    </div>
+
+                    <nav class="mobile-menu_icon">
+                        <div class="mobile-menu">
+                            <div class="mobile-menu_header flex">
+                                <div class="logo">
+                                    <img src="assets/images/small_logo_black_RGB.png" alt="Logo Discord">
+                                </div>
+                                <div class="mobile-close_btn">
+                                    <a href="#" aria-label="Icone para fechar o menu mobile">
+                                        <img src="assets/images/menu-close.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="menu-mobile_list">
+                                <li><a href="#" class="active">Inicio</a></li>
+                                <li><a href="#">Download</a></li>
+                                <li><a href="#">Nitro</a></li>
+                                <li><a href="#">Discover</a></li>
+                                <li><a href="#">Safety</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
