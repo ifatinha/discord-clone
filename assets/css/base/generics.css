@@ -23,10 +23,16 @@ body {
 
 .container-main {
     background-color: var(--background);
-    height          : 650px;
+    height          : 100%;
     overflow        : hidden;
     position        : relative;
     width           : 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-main {
+        height: 650px;
+    }
 }
 
 a {
