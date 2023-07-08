@@ -101,3 +101,33 @@
         line-height: 37px;
     }
 }
+
+#start {
+    background-color: var(--off-white);
+    padding         : 0 20px 120px;
+}
+
+.section-start {
+    align-items   : center;
+    flex-direction: column;
+    position      : relative;
+}
+
+.section-start h2 {
+    color      : var(--not-quite-black);
+    font-size  : 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    position   : absolute;
+    top        : 30px;
+}
+
+.section-start .btn-blue {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .section-start .btn-blue {
+        margin-top: 100px;
+    }
+}

@@ -75,3 +75,23 @@ a {
     background-color: var(--not-quite-black);
     color           : var(--white);
 }
+
+.btn-main {
+    border-radius: 28px;
+    font-family  : var(--font-primary);
+    font-size    : 1.25rem;
+    gap          : 10px;
+    line-height  : 24px;
+    padding      : 16px 32px;
+}
+
+.btn-blue {
+    background-color: var(--brand);
+    color           : var(--white);
+    font-weight     : 500;
+    transition      : .3s all ease-in-out;
+}
+
+.btn-blue:hover {
+    background-color: var(--blue);
+}
